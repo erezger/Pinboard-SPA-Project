@@ -6,6 +6,24 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins"; // הגדרת שם למדיניות
+
+// בתוך Program.cs, לפני var app = builder.Build();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy =>
+                      {
+                          // מאפשר גישה מכל דומיין (כדי לאפשר לאנגולר להתחבר)
+                          // ביישום ייצור (Production) יש להחליף את זה בכתובת המדויקת של האנגולר
+                          policy.AllowAnyOrigin()
+                                .AllowAnyHeader()
+                                .AllowAnyMethod();
+                      });
+});
+// הוספת השירות כ-Singleton כדי שתהיה רק מופע אחד שמנהל את הקובץ
+builder.Services.AddSingleton<JsonDataService>();
 
 var app = builder.Build();
 
@@ -17,6 +35,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors(MyAllowSpecificOrigins);
 
 app.UseAuthorization();
 
