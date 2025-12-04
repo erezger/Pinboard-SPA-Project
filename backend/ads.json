@@ -1,0 +1,32 @@
+[
+  {
+    "Id": "c2c0020e-32de-42e6-90c0-1ba4a8e51fd1",
+    "AuthorId": "test-user-1",
+    "Title": "\u05DE\u05D5\u05D3\u05E2\u05EA \u05D1\u05D3\u05D9\u05E7\u05D4 \u05D7\u05D3\u05E9\u05D4",
+    "Content": "\u05D6\u05D5\u05D4\u05D9 \u05DE\u05D5\u05D3\u05E2\u05D4 \u05E9\u05E0\u05D5\u05E6\u05E8\u05D4 \u05DE\u05EA\u05D5\u05DA \u05D4\u05D0\u05E0\u05D2\u05D5\u05DC\u05E8.",
+    "Category": "TEST",
+    "Latitude": 32,
+    "Longitude": 34.7,
+    "DateCreated": "2025-12-04T13:15:23.6804045Z"
+  },
+  {
+    "Id": "4e9b1ac3-9563-405c-a5d4-30edbc326f7b",
+    "AuthorId": "test-user-1",
+    "Title": "\u05E0\u05E1\u05D9\u05D5\u05DF",
+    "Content": "\u05E0\u05E1\u05D9\u05D5\u05DF \u05EA\u05D5\u05DB\u05DF",
+    "Category": "BUY \u0026 SELL",
+    "Latitude": 32,
+    "Longitude": 34.7,
+    "DateCreated": "2025-12-04T13:28:40.5609276Z"
+  },
+  {
+    "Id": "2f6cff94-3327-459d-b605-3b3d08e958fb",
+    "AuthorId": "test-user-1",
+    "Title": "\u05E0\u05E1\u05D9\u05D5\u05DF",
+    "Content": "\u05DE\u05D4 \u05E7\u05D5\u05E8\u05D4",
+    "Category": "BUY \u0026 SELL",
+    "Latitude": 31.82238,
+    "Longitude": 35.25266,
+    "DateCreated": "2025-12-04T14:25:06.5556132Z"
+  }
+]
